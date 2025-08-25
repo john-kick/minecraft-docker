@@ -24,6 +24,7 @@ RUN echo "eula=${EULA}" > eula.txt
 
 # Expose default Minecraft port
 EXPOSE 25565
+EXPOSE 25565/udp
 
 # Copy optional server.properties file if exists
 VOLUME ["${SERVER_DIR}"]

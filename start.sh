@@ -39,7 +39,7 @@ if [ -z "$JAVA_BIN" ]; then
     exit 1
 fi
 
-if [ ! -f "server-${$VERSION}.jar" ]; then
+if [ ! -f "server-${VERSION}.jar" ]; then
 		echo "Downloading server jar for $VERSION..."
 		curl -o server-${VERSION}.jar $SERVER_URL
 		ln -sf server-${VERSION}.jar server.jar
